@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+
+.discount-slider{
+    padding: 20px 20px 20px 20px;
+    overflow-x: hidden;
+    scrollbar-width:none; /* Firefox */
+    /* height: 100px; */
+}
+/* .discount-slider img{ */
+    /* height: 100px; */
+/* } */
+
+
+.dis30{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
