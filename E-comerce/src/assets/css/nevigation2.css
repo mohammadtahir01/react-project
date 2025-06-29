@@ -1,0 +1,12 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#nevi{
+   display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow-x: hidden;
+    position: relative;
+    right: 5rem;
+}

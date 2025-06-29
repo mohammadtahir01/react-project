@@ -20,12 +20,12 @@ import 'swiper/css/navigation';
 import '../css/navigation3.css';
 
 // import required modules
-import { Navigation } from 'swiper/modules';
+import { Navigation,Autoplay } from 'swiper/modules';
 
 function Navigation2() {
   return (
     <>
-      <Swiper navigation={true} modules={[Navigation]} 
+      <Swiper navigation={true} modules={[Navigation,Autoplay]} autoplay={{delay:2000}} 
         className="mySwiper">
         <SwiperSlide><img src={img1} alt="" /></SwiperSlide>
         <SwiperSlide><img src={img2} alt="" /></SwiperSlide>

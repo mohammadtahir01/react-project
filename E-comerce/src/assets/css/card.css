@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.card-grid{
+    display: grid;
+    grid-template-columns: repeat(10, 300px);
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px;
+    scrollbar-width: none;
+}
+.sunshine{
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+}
