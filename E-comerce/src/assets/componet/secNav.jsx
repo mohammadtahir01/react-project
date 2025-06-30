@@ -2,7 +2,12 @@ import logo from "../image/ajio.png";
 import '../css/secNav.css';
 import { CiHeart } from "react-icons/ci";
 import { MdOutlineShoppingBag } from "react-icons/md";
+
+import { useSelector } from "react-redux";
 const SecNav = () => {
+  const data = useSelector(state=>state.MyCard.Cart);
+  console.log(data);
+  const newdata = data.length;
   return (
     <>
       <div className="secNav">
@@ -32,6 +37,7 @@ const SecNav = () => {
                 <a href="#" className="secNav__container__cart__link">
                     <MdOutlineShoppingBag className="secNav__container__cart__icon" />
                 </a>
+                <span>{newdata}</span>
                 
             </div>     
         </div>

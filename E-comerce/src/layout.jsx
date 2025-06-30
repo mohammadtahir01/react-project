@@ -7,6 +7,8 @@ import NavSlider from "./assets/componet/nevigation2";
 import SecNav from "./assets/componet/secNav";
 import Slider1 from "./assets/componet/slider";
 import { Card1 } from "./assets/componet/card";
+import { Outlet } from "react-router-dom";
+// import { Component} from "./assets/componet/footer";
 // import Nav from "./assets/componet/nav";
 
 const Layout=()=>{
@@ -20,6 +22,8 @@ const Layout=()=>{
         <Slider1/>
         <NavSlider/>
         <Card1/>
+        <Outlet/>
+        {/* <Component/> */}
 
         </>
     )
