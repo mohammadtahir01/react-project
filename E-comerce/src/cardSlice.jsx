@@ -8,7 +8,14 @@ const CardSlice=createSlice({
     },
     reducers:{
         AddToCard:(state,action)=>{
+           const  cardVal = state.Cart.filter((key)=>key.id === action.payload.id)
+
+           if(cardVal.length >=1){
+            alert("Card already")
+           }else{
             state.Cart.push(action.payload);
+           }
+            
         }
     }
 })
