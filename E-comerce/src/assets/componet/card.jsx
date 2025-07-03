@@ -22,7 +22,7 @@ export function Card1() {
     }
     useEffect(()=>{
         onload()
-    },[])
+    },[]);
 
     const ans = val.map((item)=>{
     return(
