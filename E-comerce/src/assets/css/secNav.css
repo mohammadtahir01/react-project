@@ -29,7 +29,7 @@
     /* align-items: center; */
     gap: 2rem;
 }
-.secNav__container a{
+.secNav__container span{
   text-decoration: none;
 }
 .secNav__container__cart{
@@ -37,7 +37,7 @@
     /* align-items: center; */
     gap: 1rem;
 }
-.secNav__container__cart a{
+.secNav__container__cart span{
    background-color: black;
     color: white;
     border-radius: 50%;

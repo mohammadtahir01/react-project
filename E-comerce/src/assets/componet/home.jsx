@@ -6,6 +6,8 @@ import Dis from "./dis30";
 import Slider1 from "./slider";
 import SimpleSlider from "./discountSlider";
 import { Card1 } from "./card";
+
+
 const Home=()=>{
     return(
         <>

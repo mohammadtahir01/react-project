@@ -2,12 +2,16 @@ import logo from "../image/ajio.png";
 import '../css/secNav.css';
 import { CiHeart } from "react-icons/ci";
 import { MdOutlineShoppingBag } from "react-icons/md";
+import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import { useSelector } from "react-redux";
+// import { Navigation } from "swiper/modules";
 const SecNav = () => {
   const data = useSelector(state=>state.MyCard.Cart);
-  console.log(data);
+  // console.log(data);
   const newdata = data.length;
+  const navigate = useNavigate();
   return (
     <>
       <div className="secNav">
@@ -16,28 +20,29 @@ const SecNav = () => {
           </div>
          <div className="secNav__container2">
           <div className="secNav__container">
-            <a href="#" className="secNav__container__item__link">
+            <span className="secNav__container__item__link" as={Link}  to="home">
               Home
-            </a>
-            <a href="#" className="secNav__container__item__link">
+            </span>
+            <span className="secNav__container__item__link" as={Link} to="product">
               Products
-            </a>
-            <a href="#" className="secNav__container__item__link">
+            </span>
+            <span className="secNav__container__item__link" as={Link} to="about">
               About Us
-            </a>
+            </span>
+
           </div>
             <div className="secNav__container__search">
                 <input type="text" placeholder="Search AJIO" className="secNav__container__search__input" />
                 <button className="secNav__container__search__button">Search</button>
             </div>
             <div className="secNav__container__cart">
-                <a href="#" className="secNav__container__cart__link">
-                  <CiHeart  className="secNav__container__cart__icon" />
-                </a>
-                <a href="#" className="secNav__container__cart__link">
-                    <MdOutlineShoppingBag className="secNav__container__cart__icon" />
-                </a>
-                <span>{newdata}</span>
+                <span href="#" className="secNav__container__cart__link">
+                  <CiHeart/>
+                </span>
+                <span className="secNav__container__cart__link">
+                  <MdOutlineShoppingBag onClick={()=>navigate("/myProduct")}/>
+                </span>
+                <p>{newdata}</p>
                 
             </div>     
         </div>

@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.mainDiv{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 4rem;
+    /* height: 100px; */
+    width: 100%;
+    background-color: #63b5d690;
+}
+.mainDiv h6{
+    font-weight: 800;
+    position: relative;
+    right: 35px;
+}
+

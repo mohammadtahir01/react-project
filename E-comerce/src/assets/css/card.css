@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 .card-grid{
     display: grid;
@@ -21,4 +22,5 @@
     gap: 1rem;
     justify-content: center;
     align-items: center;
+    scrollbar-width: none;
 }
