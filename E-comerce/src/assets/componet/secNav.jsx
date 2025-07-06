@@ -6,7 +6,6 @@ import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 import { useSelector } from "react-redux";
-// import { Navigation } from "swiper/modules";
 const SecNav = () => {
   const data = useSelector(state=>state.MyCard.Cart);
   // console.log(data);
@@ -28,6 +27,10 @@ const SecNav = () => {
             </span>
             <span className="secNav__container__item__link" as={Link} to="about">
               About Us
+            </span>
+
+             <span className="secNav__container__item__link" as={Link} to="myProduct">
+              MyProduct
             </span>
 
           </div>

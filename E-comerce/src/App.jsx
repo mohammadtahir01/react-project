@@ -5,13 +5,12 @@ import MyProduct from "./assets/componet/myProduct";
 const App=()=>{
   return(
     <>
-    {/* <h1>helo</h1> */}
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<Layout/>}>
-      <Route index element={<Home/>}/>
-      <Route path="home" element={<Home/>}/>
-      <Route path="myProduct" element={<MyProduct/>}/>
+        <Route index element={<Home/>}/>
+        <Route path="home" element={<Home/>}/>
+        <Route path="myProduct" element={<MyProduct/>}/>
       </Route>
     </Routes>
     </BrowserRouter>

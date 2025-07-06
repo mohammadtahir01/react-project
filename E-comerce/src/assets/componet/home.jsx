@@ -1,5 +1,4 @@
-import NavTop from "./nav";
-import SecNav from "./secNav";
+
 import Navigation2 from "./nevigation";
 import NavSlider from "./nevigation2"
 import Dis from "./dis30";
@@ -11,8 +10,6 @@ import { Card1 } from "./card";
 const Home=()=>{
     return(
         <>
-        <NavTop/>
-        <SecNav/>
         <Navigation2/>
         <SimpleSlider/>
         <Dis/>

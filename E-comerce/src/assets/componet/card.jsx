@@ -36,9 +36,9 @@ export function Card1() {
          {item.OldPrice && <span>Old Price:<span className="text-decoration-line-through">{item.OldPrice}</span></span>}
          &nbsp;&nbsp;{item.price}
         </Card.Text>
-        <Button variant="primary" onClick={()=>dispech(AddToCard({id:item.id,name:item.name,imgage:item.image
+        <Button variant="primary" onClick={()=>dispech(AddToCard({id:item.id,name:item.name,image:item.image
           ,rating:item.rating,description:item.description,OldPrice:item.OldPrice,price:item.price,
-          discount:item.discount
+          discount:item.discount,category:item.category, brand:item.brand ,qnty:item.qnty+1
         }))}>Hurry Up</Button>
         &nbsp;&nbsp;
         {item.discount && <span className="badge bg-success ms-5" >Discount:{item.discount}</span>}
@@ -72,9 +72,9 @@ export function Card1() {
          {item.OldPrice && <span>Old Price:<span className="text-decoration-line-through">{item.OldPrice}</span></span>}
          &nbsp;&nbsp;{item.price}
         </Card.Text>
-        <Button variant="primary" onClick={()=>dispech(AddToCard({id:item.id,name:item.name,imgage:item.image
+        <Button variant="primary" onClick={()=>dispech(AddToCard({id:item.id,name:item.name,image:item.image
           ,rating:item.rating,description:item.description,OldPrice:item.OldPrice,price:item.price,
-          discount:item.discount
+          discount:item.discount,category:item.category, brand:item.brand,qnty:item.qnty+1
         }))}>Hurry Up</Button>
         &nbsp;&nbsp;
         {item.discount && <span className="badge bg-success ms-5" >Discount:{item.discount}</span>}
@@ -82,7 +82,6 @@ export function Card1() {
     </Card>
         )
     })
-
   return (
     <>
     <div className="sunshine">

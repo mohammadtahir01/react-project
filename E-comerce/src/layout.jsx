@@ -1,12 +1,14 @@
 
 import { Outlet } from "react-router-dom";
-import Home from "./assets/componet/home";
 import Footer from "./assets/componet/footer";
+import NavTop from "./assets/componet/nav";
+import SecNav from "./assets/componet/secNav";
 
 const Layout=()=>{
     return(
         <>
-        <Home/>
+        <NavTop/>
+        <SecNav/>      
         <Outlet/>
         <Footer/>
         </>

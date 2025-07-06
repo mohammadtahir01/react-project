@@ -16,8 +16,10 @@ const CardSlice=createSlice({
             state.Cart.push(action.payload);
            }
             
+        },Remove:(state,action)=>{
+            state.Cart=state.Cart.filter((key)=>key.id != action.payload.id);
         }
     }
 })
-export const {AddToCard} = CardSlice.actions;
+export const {AddToCard,Remove} = CardSlice.actions;
 export default CardSlice.reducer;
