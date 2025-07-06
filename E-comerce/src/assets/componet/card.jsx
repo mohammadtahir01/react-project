@@ -38,7 +38,7 @@ export function Card1() {
         </Card.Text>
         <Button variant="primary" onClick={()=>dispech(AddToCard({id:item.id,name:item.name,image:item.image
           ,rating:item.rating,description:item.description,OldPrice:item.OldPrice,price:item.price,
-          discount:item.discount,category:item.category, brand:item.brand ,qnty:item.qnty+1
+          discount:item.discount,category:item.category, brand:item.brand ,qnty:1
         }))}>Hurry Up</Button>
         &nbsp;&nbsp;
         {item.discount && <span className="badge bg-success ms-5" >Discount:{item.discount}</span>}
