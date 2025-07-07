@@ -6,11 +6,13 @@ import "../css/form.css"
 
 const FormFil = () => {
     const nev = useNavigate();
-    const [val,setVal] = useState({  name: "",
-        email: "",
-        number: "",
-        address: "",
-        pin: ""});
+    const [val,setVal] = useState({  
+      name: "",
+      email: "",
+      number: "",
+      address: "",
+      pin: ""
+    });
 
 
     const handleVal=(e)=>{

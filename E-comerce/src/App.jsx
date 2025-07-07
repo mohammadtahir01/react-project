@@ -16,7 +16,7 @@ const App=()=>{
         <Route path="myProduct" element={<MyProduct/>}/>
         <Route path="form" element={<FormFil/>}/>
         <Route path="submit" element={<PaymentMethod/>}/>
-        <Route path="selected:val" element={<SelectData/>}/>
+        <Route path="selected/:textVal" element={<SelectData/>}/>
       </Route>
     </Routes>
     </BrowserRouter>

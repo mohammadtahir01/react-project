@@ -14,6 +14,11 @@ const SecNav = () => {
   const navigate = useNavigate();
 
   const [val,setVal] = useState("");
+
+  const handlesub=()=>{
+    navigate(`selected/${val}`)
+    setVal("")
+  }
   return (
     <>
       <div className="secNav">
@@ -38,8 +43,8 @@ const SecNav = () => {
 
           </div>
             <div className="secNav__container__search">
-                <input type="text" placeholder="Search AJIO" className="secNav__container__search__input" value={val} onChange={(e)=>setVal(e.target.value)} />
-                <button className="secNav__container__search__button" onClick={()=>navigate(`/selected${val}`)}>Search</button>
+                <input type="text" placeholder="Search AJIO" className="secNav__container__search__input" name="textVal" value={val} onChange={(e)=>{setVal(e.target.value)}} />
+                <button className="secNav__container__search__button" onClick={handlesub}>Search</button>
             </div>
             <div className="secNav__container__cart">
                 <span href="#" className="secNav__container__cart__link">

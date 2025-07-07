@@ -62,7 +62,7 @@ const MyProduct=()=>{
           <th></th>
           <th></th>
           <th></th>
-           <th></th>
+          <th></th>
           <th></th>
           <th>Net Amount :</th>
           <th>{netAmount}</th>
