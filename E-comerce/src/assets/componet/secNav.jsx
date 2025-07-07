@@ -6,11 +6,14 @@ import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 import { useSelector } from "react-redux";
+import { useState } from "react";
 const SecNav = () => {
   const data = useSelector(state=>state.MyCard.Cart);
   // console.log(data);
   const newdata = data.length;
   const navigate = useNavigate();
+
+  const [val,setVal] = useState("");
   return (
     <>
       <div className="secNav">
@@ -35,8 +38,8 @@ const SecNav = () => {
 
           </div>
             <div className="secNav__container__search">
-                <input type="text" placeholder="Search AJIO" className="secNav__container__search__input" />
-                <button className="secNav__container__search__button">Search</button>
+                <input type="text" placeholder="Search AJIO" className="secNav__container__search__input" value={val} onChange={(e)=>setVal(e.target.value)} />
+                <button className="secNav__container__search__button" onClick={()=>navigate(`/selected${val}`)}>Search</button>
             </div>
             <div className="secNav__container__cart">
                 <span href="#" className="secNav__container__cart__link">

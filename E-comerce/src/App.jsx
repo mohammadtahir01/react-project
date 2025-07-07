@@ -4,6 +4,7 @@ import Home from "./assets/componet/home";
 import MyProduct from "./assets/componet/myProduct";
 import FormFil from "./assets/componet/from";
 import PaymentMethod from "./assets/componet/submit";
+import SelectData from "./assets/componet/selectedData";
 const App=()=>{
   return(
     <>
@@ -15,6 +16,7 @@ const App=()=>{
         <Route path="myProduct" element={<MyProduct/>}/>
         <Route path="form" element={<FormFil/>}/>
         <Route path="submit" element={<PaymentMethod/>}/>
+        <Route path="selected:val" element={<SelectData/>}/>
       </Route>
     </Routes>
     </BrowserRouter>
