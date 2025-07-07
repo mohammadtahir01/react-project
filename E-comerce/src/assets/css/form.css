@@ -1,0 +1,15 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.sub{
+    width: 300px;
+    margin: auto;
+    padding: 10px;
+    background-color: gray;
+}
+.btn1{
+    display: flex;
+    justify-content: center;
+}

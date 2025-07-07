@@ -1,4 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
+import "../css/MyProduct.css"
 import Table from 'react-bootstrap/Table';
 import { Remove,increase,decrease} from "../../cardSlice";
 //react icons
@@ -21,7 +22,7 @@ const MyProduct=()=>{
         return(
            <tr>
             <td>
-                <img src={item.image} width="70" height="70"/>
+                <img src={item.image} className="img"/>
             </td>
             <td>{item.name}</td>
             <td>{item.category}</td>
@@ -32,9 +33,9 @@ const MyProduct=()=>{
               {item.qnty}
              <TiMinus onClick={()=>dispach(decrease({id:item.id}))}/>
               </td>
-            <td>{item.price}&nbsp;&nbsp;<span style={{color:"red",textDecoration:"line-through"}}>{item.OldPrice}</span></td>
+            <td>{item.price}&nbsp;&nbsp;<span className="price">{item.OldPrice}</span></td>
             <td>{item.price*item.qnty}</td>
-            <td><button onClick={()=>dispach(Remove({id:item.id}))}>Item Remove</button></td>
+            <td><button onClick={()=>dispach(Remove({id:item.id}))} className="remove">Item Remove</button></td>
            </tr>
         )
     })
@@ -68,7 +69,9 @@ const MyProduct=()=>{
         </tr>
       </tbody>
       </Table>
+      <div className="btn">
       <button onClick={()=>nevigate("/form")}>Payment Box</button>
+      </div>
         </>
     )
 }

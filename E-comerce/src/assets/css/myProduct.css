@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.img{
+    width: 70px;
+    height: 70px;
+}
+.price{
+    color:red;
+    text-decoration: line-through;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.remove{
+    border: none;
+    padding: 10px;
+    background-color: red;
+    border-radius: 5px;
+    color: white;
+}
+.btn button{
+    border: navajowhite;
+    padding: 10px;
+    background-color: green;
+    border-radius: 5px;
+    color: white;
+}
