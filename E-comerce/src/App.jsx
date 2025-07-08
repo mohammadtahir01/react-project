@@ -5,6 +5,8 @@ import MyProduct from "./assets/componet/myProduct";
 import FormFil from "./assets/componet/from";
 import PaymentMethod from "./assets/componet/submit";
 import SelectData from "./assets/componet/selectedData";
+import Show from "./assets/componet/show";
+import SortData from "./assets/componet/sortData";
 const App=()=>{
   return(
     <>
@@ -13,10 +15,12 @@ const App=()=>{
       <Route path="/" element={<Layout/>}>
         <Route index element={<Home/>}/>
         <Route path="home" element={<Home/>}/>
-        <Route path="myProduct" element={<MyProduct/>}/>
+        <Route path="sortdata" element={<SortData/>}/>
+        <Route path="myProject" element={<MyProduct/>}/>
         <Route path="form" element={<FormFil/>}/>
         <Route path="submit" element={<PaymentMethod/>}/>
         <Route path="selected/:textVal" element={<SelectData/>}/>
+        <Route path="show/:id" element={<Show/>}/>
       </Route>
     </Routes>
     </BrowserRouter>

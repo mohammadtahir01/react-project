@@ -1,0 +1,17 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+.Div1{
+ display: flex;
+ justify-content: center;
+ gap: 10px;
+}
+.Div1 input{
+    width: 5%;
+    padding: 5px;
+}
+.showdata div{
+    display: flex;
+    gap: 1rem;
+}

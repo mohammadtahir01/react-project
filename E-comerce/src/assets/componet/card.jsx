@@ -9,10 +9,12 @@ import { useState,useEffect } from "react";
 
 import { useDispatch } from "react-redux";
 import { AddToCard } from "../../cardSlice";
+import { useNavigate } from "react-router-dom";
 
 export function Card1() {
     const [val,setVal] = useState([])
     const dispech = useDispatch();
+    const navigate = useNavigate();
 
     const onload=async()=>{
       let api = "http://localhost:3000/clothes"
@@ -27,7 +29,7 @@ export function Card1() {
     const ans = val.map((item)=>{
     return(
     <Card style={{ minWidth: '275px',width: '12rem' }}>
-      <Card.Img variant="top" src={item.image} />
+      <Card.Img variant="top" src={item.image} onClick={()=>navigate(`show/${item.id}`)}/>
        {item.rating && <span className="badge bg-warning">Rating: {item.rating}</span>}
       <Card.Body>
         <Card.Title>{item.name}</Card.Title>

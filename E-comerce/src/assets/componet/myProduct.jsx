@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import "../css/MyProduct.css"
+import "../css/myProduct.css"
 import Table from 'react-bootstrap/Table';
 import { Remove,increase,decrease} from "../../cardSlice";
 //react icons
@@ -69,7 +69,7 @@ const MyProduct=()=>{
         </tr>
       </tbody>
       </Table>
-      <div className="btn">
+      <div className="btn1">
       <button onClick={()=>nevigate("/form")}>Payment Box</button>
       </div>
         </>

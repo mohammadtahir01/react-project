@@ -27,20 +27,10 @@ const SecNav = () => {
           </div>
          <div className="secNav__container2">
           <div className="secNav__container">
-            <span className="secNav__container__item__link" as={Link}  to="home">
-              Home
-            </span>
-            <span className="secNav__container__item__link" as={Link} to="product">
-              Products
-            </span>
-            <span className="secNav__container__item__link" as={Link} to="about">
-              About Us
-            </span>
-
-             <span className="secNav__container__item__link" as={Link} to="myProduct">
-              MyProduct
-            </span>
-
+            <Link to="home">Home</Link>
+            <Link to="sortdata">SortData</Link>
+            <Link to="about">About</Link>
+            <Link to="myProject">MyProduct</Link>
           </div>
             <div className="secNav__container__search">
                 <input type="text" placeholder="Search AJIO" className="secNav__container__search__input" name="textVal" value={val} onChange={(e)=>{setVal(e.target.value)}} />
