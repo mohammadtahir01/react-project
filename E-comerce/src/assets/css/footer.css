@@ -16,4 +16,27 @@
     position: relative;
     right: 35px;
 }
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #5991b1fa;
+    padding: 1rem;
+}
+.footer h6{
+  position: relative;
+  left: 2rem;
+  color: black;
+}
+.footer ul li{
+    list-style: none;
+    color: black;
+}
+
+.footer a{
+    text-decoration: none;
+}
+.footer a:hover{
+    text-decoration: underline;
+    color: black;
+}
 

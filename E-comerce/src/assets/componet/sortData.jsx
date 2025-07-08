@@ -52,7 +52,7 @@ const ans = mydata.map((item)=>{
 
   return (
     <>
-      <h1>helo</h1>
+      <h1>Search Data here By Price</h1>
       <div className="Div1">
           <input
             type="number"

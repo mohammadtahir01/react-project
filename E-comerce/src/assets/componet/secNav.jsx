@@ -1,4 +1,5 @@
 import logo from "../image/ajio.png";
+import '../css/navtop.css';
 import '../css/secNav.css';
 import { CiHeart } from "react-icons/ci";
 import { MdOutlineShoppingBag } from "react-icons/md";
@@ -21,6 +22,10 @@ const SecNav = () => {
   }
   return (
     <>
+
+    <div className="nav-top">
+       <a href="#"><p>Sign in / Join Ajio</p></a>
+     </div>
       <div className="secNav">
           <div className="secNav-logo">
             <img src={logo} alt="Logo" className="secNav-logo__image" />
@@ -41,7 +46,7 @@ const SecNav = () => {
                   <CiHeart/>
                 </span>
                 <span className="secNav__container__cart__link">
-                  <MdOutlineShoppingBag onClick={()=>navigate("/myProduct")}/>
+                  <MdOutlineShoppingBag onClick={()=>navigate("/myProject")}/>
                 </span>
                 <p>{newdata}</p>
                 

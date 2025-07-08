@@ -30,7 +30,7 @@ export function Card1() {
     return(
     <Card style={{ minWidth: '275px',width: '12rem' }}>
       <Card.Img variant="top" src={item.image} onClick={()=>navigate(`show/${item.id}`)}/>
-       {item.rating && <span className="badge bg-warning">Rating: {item.rating}</span>}
+       {item.rating && <span className="badge bg-warning" style={{color:"black"}}>Rating: {item.rating}</span>}
       <Card.Body>
         <Card.Title>{item.name}</Card.Title>
         <Card.Text>
