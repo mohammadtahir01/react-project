@@ -7,6 +7,8 @@ import PaymentMethod from "./assets/componet/submit";
 import SelectData from "./assets/componet/selectedData";
 import Show from "./assets/componet/show";
 import SortData from "./assets/componet/sortData";
+import Sign from "./assets/componet/signup";
+import Login from "./assets/componet/loginp";
 const App=()=>{
   return(
     <>
@@ -21,6 +23,8 @@ const App=()=>{
         <Route path="submit" element={<PaymentMethod/>}/>
         <Route path="selected/:textVal" element={<SelectData/>}/>
         <Route path="show/:id" element={<Show/>}/>
+        <Route path="singup" element={<Sign/>}/>
+        <Route path="login" element={<Login/>}/>
       </Route>
     </Routes>
     </BrowserRouter>

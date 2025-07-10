@@ -24,7 +24,7 @@ const SecNav = () => {
     <>
 
     <div className="nav-top">
-       <a href="#"><p>Sign in / Join Ajio</p></a>
+       <p onClick={()=>navigate("/singup")}>Sign in / Join Ajio</p>
      </div>
       <div className="secNav">
           <div className="secNav-logo">
