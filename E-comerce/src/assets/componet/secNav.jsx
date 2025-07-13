@@ -43,7 +43,7 @@ const SecNav = () => {
             </div>
             <div className="secNav__container__cart">
                 <span href="#" className="secNav__container__cart__link">
-                  <CiHeart/>
+                  <CiHeart onClick={()=>navigate("/heart")}/>
                 </span>
                 <span className="secNav__container__cart__link">
                   <MdOutlineShoppingBag onClick={()=>navigate("/myProject")}/>

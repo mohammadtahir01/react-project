@@ -8,21 +8,18 @@
 .discount-slider{
     padding: 20px 20px 20px 20px;
     overflow-x: hidden;
-    scrollbar-width:none; /* Firefox */
-    /* height: 100px; */
+    scrollbar-width:none; 
+   
 }
-/* .discount-slider img{ */
-    /* height: 100px; */
-/* } */
-
-
 .dis30{
     overflow: hidden;
     display: flex;
     justify-content: center;
 
 }
+.dis30 img{
+    transition: all 0.4s ease;
+}
 .dis30 img:hover{
     transform: scale(1.01);
-    /* transition: all 0.3s ease-in-out; */
 }

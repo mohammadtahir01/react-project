@@ -55,7 +55,6 @@ export function Card1() {
     const onload1=async()=>{
       let api = "http://localhost:3000/clothes2"
       let res = await axios.get(api)
-      // console.log(res.data)
       setVal1(res.data)
     }
     useEffect(()=>{
@@ -65,7 +64,7 @@ export function Card1() {
     const ans2 = val1.map((item)=>{
     return(
     <Card style={{ minWidth: '275px',width: '12rem' }}>
-      <Card.Img variant="top" src={item.image} />
+      <Card.Img variant="top" src={item.image} onClick={()=>navigate(`show/${item.id}`)}/>
        {item.rating && <span className="badge bg-warning" style={{color:"black"}}>Rating: {item.rating}</span>}
       <Card.Body>
         <Card.Title>{item.name}</Card.Title>

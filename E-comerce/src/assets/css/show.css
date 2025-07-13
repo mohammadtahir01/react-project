@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.showDiv{
+    display:flex;
+    justify-content:center;
+    padding:1rem 0px 1rem 0px;
+}
+.showDiv2{
+    background-color:white;
+    padding:10px;
+    display:flex;
+    align-items: center;
+    box-shadow:5px 5px 9px 1px gray;
+    border-radius:10px;
+    transition: all 0.5s ease;
+
+}
+.showDiv2:hover{
+    transform: scale(1.01);
+}
+.showDiv img{
+    height: 300px;
+}
+.rating{
+    background-color: black;
+    border-radius: 2px;
+    justify-content: center;
+    color: white;
+    padding: 2px 10px;
+}
+.rating:hover{
+    background-color: gray;
+    color: black;
+}
+.discriptionDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.discription{
+    width: 51%;
+    color: gray;
+}
+.showDiv h5{
+    font-family:emoji;
+}
+.btn12{
+    display: flex;
+    gap: 1rem;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.btn12 button{
+    padding: 5px 32px 5px 32px;
+    border: none;
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    box-shadow:5px 5px 9px 1px gray;
+}
+.btn12 .btn14{
+    background-color: gray;
+    color: black;
+}
+.btn12 .btn14:hover{
+    background-color: green;
+    color: white;
+}

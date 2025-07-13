@@ -9,6 +9,7 @@ import Show from "./assets/componet/show";
 import SortData from "./assets/componet/sortData";
 import Sign from "./assets/componet/signup";
 import Login from "./assets/componet/loginp";
+import Heart from "./assets/componet/heart";
 const App=()=>{
   return(
     <>
@@ -25,6 +26,7 @@ const App=()=>{
         <Route path="show/:id" element={<Show/>}/>
         <Route path="singup" element={<Sign/>}/>
         <Route path="login" element={<Login/>}/>
+        <Route path="heart" element={<Heart/>}/>
       </Route>
     </Routes>
     </BrowserRouter>
