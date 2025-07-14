@@ -6,6 +6,7 @@ import "../css/show.css"
 import { FaRegHeart } from "react-icons/fa";
 import { useDispatch } from "react-redux";
 import { AddToCard2 } from "../../cardSlice2";
+import { AddToCard } from "../../cardSlice";
 
 
 const Show = () => {
@@ -36,8 +37,6 @@ const Show = () => {
     const handle=()=>{
         dispach(AddToCard2(id))
     }
-
-
     return (
         <>
             <div className="showDiv">
@@ -59,7 +58,7 @@ const Show = () => {
                             <h5>Price: {showdata.price} &nbsp;&nbsp; MRP:<span style={{ color: "gray", textDecoration: "line-through" }}> {showdata.OldPrice}</span></h5>
                         </div>
                         <div className="btn12">
-                            <button>Add</button>
+                            <button onClick={()=>dispach(AddToCard({...showdata, qnty: 1}))}>Add</button>
                             <button className="btn14" onClick={handle}><FaRegHeart /> Heart</button>
                         </div>
                     </div>

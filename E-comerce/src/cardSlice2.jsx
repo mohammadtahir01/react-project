@@ -12,7 +12,7 @@ const CardSlice2 = createSlice({
       }
     },
     del:(state,action)=>{
-      state.Task2=state.Task2.filter((key)=>key.id != action.payload.id)
+      state.Task2=state.Task2.filter(id=>id !== action.payload)
     }
   }
 });
